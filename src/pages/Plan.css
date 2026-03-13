@@ -1,0 +1,104 @@
+.plan {
+  animation: fadeIn 0.3s ease;
+}
+
+.plan-header {
+  margin-bottom: 16px;
+}
+
+.plan-header h1 {
+  font-size: 20px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.plan-header p {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan-card {
+  display: flex;
+  align-items: center;
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: all 0.2s;
+}
+
+.plan-card:active {
+  transform: scale(0.98);
+}
+
+.plan-card.completed {
+  background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);
+  border: 1px solid #86EFAC;
+}
+
+.plan-day {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 70px;
+}
+
+.day-num {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.completed-badge {
+  background: var(--success);
+  color: white;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan-content {
+  flex: 1;
+  padding: 0 12px;
+}
+
+.plan-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.plan-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.topic-pill {
+  font-size: 10px;
+  color: var(--text-secondary);
+  background: #F3F4F6;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.topic-more {
+  font-size: 10px;
+  color: var(--text-secondary);
+}
+
+.plan-arrow {
+  font-size: 20px;
+  color: var(--text-secondary);
+}
